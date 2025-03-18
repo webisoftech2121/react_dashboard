@@ -1,0 +1,102 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Make everything responsive */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, p {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Main Layout */
+  header, footer {
+    background-color: #333;
+    color: white;
+    /* padding: 20px; */
+    text-align: center;
+  }
+  
+  /* Mobile-first Design: Styles for smaller screens */
+  @media (max-width: 768px) {
+    /* Make the header navigation links stack vertically */
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 0;
+    }
+  
+    .main-content {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .about-content {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
+  /* Tablet Design: At least 768px width */
+  @media (min-width: 768px) {
+    /* Header with horizontal navigation */
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    .main-content {
+      padding: 40px;
+      text-align: left;
+    }
+  
+    .about-content {
+      padding: 40px;
+      text-align: left;
+    }
+  }
+  
+  /* Desktop Design: At least 1024px width */
+  @media (min-width: 1024px) {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    header {
+      text-align: left;
+    }
+  
+    footer {
+      text-align: left;
+    }
+  }
+  
